@@ -1,4 +1,4 @@
-#BetterDevCLI
+<H1>BetterDevCLI</H1>
 
 <H2>Idea</H2>
 While I thoroughly enjoy recieving the next issue of betterDev, I never seem to quite get through them all or know where to start. I often find myself looking though all the previous issues trying to find the articles that relate to my current development efforts. I thought it would be cool if I scrape the <a href="https://betterdev.link/issues">issue archive</a> and create a command line interface tool that contains all the different articles. From this CLI you will be able to: 

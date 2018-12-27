@@ -1,0 +1,28 @@
+{
+  "name": "betterdevcli",
+  "version": "1.0.0",
+  "description": "CLI for BetterDev archive",
+  "main": "program.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgibers/BetterDevCLI.git"
+  },
+  "keywords": [
+    "nodeJS",
+    "scraper",
+    "betterDev"
+  ],
+  "author": "Brendan Giberson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bgibers/BetterDevCLI/issues"
+  },
+  "homepage": "https://github.com/bgibers/BetterDevCLI#readme",
+  "dependencies": {
+    "nodemon": "^1.18.9",
+    "yawn-yaml": "^1.3.4"
+  }
+}

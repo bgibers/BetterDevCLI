@@ -1,19 +1,19 @@
-//Imports
-const yaml = require('yaml');
+const rp = require('request-promise');
+const $ = require('cheerio');
+const url = 'https://betterdev.link/issues/1';
 
-var latestIssue = 1
-const url = "https://raw.githubusercontent.com/yeo/betterdev.link/master/content/issues/" + latestIssue + ".yml"
+rp(url)
+  .then(function(html){
+    //success!
+        const linkCount = $('.issue-link > a', html).length;
+        const issueUrls = [];
 
-/*
-    Scrape web using url
-    Create function to check date and do new scrape
-    Save different links to a db
-    Convert yaml to js-yaml for more functionality 
-    modulaize functions
-    create functions to retrieve from db
- */
+        for(let i = 0; i < linkCount; i++) {
+            issueUrls.push($('.issue-link > a', html)[i].attribs.href);
+        }
+        console.log(issueUrls);
+    })
+  .catch(function(err){
+    //handle error
+  });
 
-//scrape web here and store as string
-var text = ``
-
-console.log(yaml.parse(text))

@@ -22,10 +22,10 @@
   },
   "homepage": "https://github.com/bgibers/BetterDevCLI#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
     "js-yaml": "^3.12.0",
     "nodemon": "^1.18.9",
     "npm": "^6.5.0",
+    "puppeteer": "^1.11.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "yaml": "^1.1.0"
